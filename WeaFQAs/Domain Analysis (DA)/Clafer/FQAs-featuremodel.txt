@@ -1,0 +1,253 @@
+abstract fqas
+	1..5 Fr1
+		security
+			1..7 Fr126
+				encryption
+					encryptionalgorithms
+						1..1 Fr12674849
+							asymmetric
+								1..1 Fr126748495052
+									rsa
+									dsa
+									ecdsa
+							symmetric
+								1..1 Fr126748495154
+									aes
+									desede
+									blowfish
+									des
+					0..1 Optkeysize
+						keysize
+					encryptionimplementations
+						1..1 Fr12676263
+							javaxcrypto
+							bouncycastle
+					encryptionoperations
+						1..1 Fr12676667
+							encrypt
+							decrypt
+					mode
+						1..1 Fr12677172
+							cbc
+							ecb
+							cfb
+							ctr
+							cts
+					padding
+						1..1 Fr12677576
+							pkcs5
+							pkcs1
+							oaep
+				authentication
+					authenticationimplementations
+						1..1 Fr12682526
+							jaas
+							springsecurity
+					authenticationoperations
+						1..1 Fr12683132
+							authenticate
+					authenticationmechanism
+						1..1 Fr12683435
+							userpassword
+							digitalcertificate
+								0..1 Optpseudonymouscertificate
+									pseudonymouscertificate
+							biometric
+							socialid
+							pin
+							matrixcode
+					0..1 Optpasswordlength
+						passwordlength
+					0..1 Optpasswordtype
+						passwordtype
+							1..1 Fr12684344
+								numeric
+								alphanumeric
+								specialchars
+					0..1 Optlimitedsession
+						limitedsession
+					0..1 Optauthenticationlogging
+						authenticationlogging
+					0..1 Optanonymoususer
+						anonymoususer
+				hashing
+					hashingimplementations
+						1..1 Fr12691213
+							javasecuritymessagedigest
+							guava
+					hashingoperations
+						1..1 Fr12691617
+							hash
+					hashingalgorithms
+						1..1 Fr12691920
+							md5
+							sha1
+							sha256
+							sha512
+				confidentiality
+				privacy
+				integrity
+				nonrepudiation
+		usability
+			1..5 Fr1383
+				logging
+					loggingoperations
+						1..1 Fr1383848687
+							log
+					loggingimplementations
+						1..1 Fr1383848990
+							log4j
+							logback
+							javautillogging
+							simpleimplementationslf4j
+					handler
+						1..1 Fr1383849596
+							consolelog
+							filelog
+							databaselog
+					format
+						1..1 Fr138384104105
+							txt
+							xml
+							html
+							json
+					level
+						1..5 Fr138384109110
+							trace
+							debug
+							info
+							warning
+							error
+					0..1 Optcypheredmessages
+						cypheredmessages
+					0..1 Opthistorylog
+						historylog
+					0..1 Opterrorlog
+						errorlog
+							0..1 Opttracefile
+								tracefile
+				contextualhelp
+					contextualhelpoperations
+						1..1 Fr138385117118
+							showhelp
+					contextualhelpimplementations
+						1..1 Fr138385120121
+							javawizardapi
+					helptype
+						1..2 Fr138385123126
+							tutorial
+							wizard
+					usertype
+						1..4 Fr138385129130
+							beginner
+							intermediate
+							advanced
+							expert
+					0..1 Optauthenticateduser
+						authenticateduser
+				executioncontrol
+					1..4 Fr1383206208
+						undo
+						redo
+						cancel
+						goback
+					0..1 Optshortcuts
+						shortcuts
+				internationalization
+					locale
+				feedback
+					1..4 Fr1383215216
+						interactionfeedback
+						progressfeedback
+						systemstatusdisplay
+						alerts
+		persistence
+			1..2 Fr14136
+				filestorage
+					filestorageoperations
+						1..1 Fr14136137139140
+							createfile
+							modifyfile
+							deletefile
+					filetype
+						1..1 Fr14136137144145
+							binary
+							txtfile
+							xmlfile
+							jsonfile
+					filestorageimplementations
+						1..1 Fr14136137151152
+							javaio
+					0..1 Opttemporalfile
+						temporalfile
+				databasestorage
+					databasestorageoperations
+						1..1 Fr14136138154155
+							store
+							query
+					databasestorageimplementations
+						1..1 Fr14136138158159
+							mysql
+							mongodb
+							oracledb
+					databasetype
+						1..1 Fr14136138163167
+							relational
+							nosql
+					datatype
+						1..4 Fr14136138170171
+							integers
+							strings
+							floats
+							objects
+					0..1 Optsecuredatabase
+						securedatabase
+		contextawareness
+			1..5 Fr15195
+				locationaware
+					1..2 Fr15195196201
+						gps
+						wifilocation
+				timeaware
+				deviceaware
+					1..2 Fr15195198228
+						batterystatus
+						irsensor
+				useraware
+				environmentaware
+		performance
+			1..1 Fr1176177
+				caching
+					cachingoperations
+						1..1 Fr1176177178179181
+							cachestore
+							cachequery
+							cacheupdate
+					cachingimplementations
+						1..1 Fr1176177178180185
+							javacachingsystem
+							caffeine
+					maxsizecache
+					cachetype
+						1..1 Fr1176177178189190
+							localcache
+							remotecache
+					0..1 Optmaxlifeseconds
+						maxlifeseconds
+					0..1 Opteternalobjects
+						eternalobjects
+
+
+[timeaware || (not batterystatus)]
+[authentication || (not securedatabase)]
+[alerts || (not batterystatus)]
+[authentication || (not authenticateduser)]
+[filestorage || (not tracefile)]
+[encryption || (not cypheredmessages)]
+[(not simpleimplementationslf4j) || (not xml)]
+[authentication || (not privacy)]
+[encryption || (not confidentiality)]
+
+
+instance: fqas
+
