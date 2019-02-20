@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<configuration>
+    <feature automatic="selected" name="eVotingFHJava"/>
+    <feature automatic="selected" name="eVoting"/>
+    <feature manual="selected" name="votingMachine"/>
+    <feature automatic="unselected" name="mobileDevice"/>
+    <feature automatic="unselected" name="desktopComputer"/>
+    <feature automatic="selected" name="security"/>
+    <feature automatic="selected" name="authentication"/>
+    <feature automatic="selected" name="votingKey"/>
+    <feature automatic="selected" name="encryption"/>
+    <feature automatic="unselected" name="AES"/>
+    <feature automatic="unselected" name="RSA"/>
+    <feature manual="selected" name="DES"/>
+</configuration>

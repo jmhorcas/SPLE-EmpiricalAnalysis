@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<featureModel>
+    <properties/>
+    <struct>
+        <and abstract="true" mandatory="true" name="eVotingFHJava">
+            <alt mandatory="true" name="eVoting">
+                <feature name="votingMachine"/>
+                <feature name="mobileDevice"/>
+                <feature name="desktopComputer"/>
+            </alt>
+            <feature name="logging"/>
+            <and abstract="true" mandatory="true" name="security">
+                <or mandatory="true" name="authentication">
+                    <feature name="fingerPrint"/>
+                    <feature name="digitalCertificate"/>
+                    <feature name="votingKey"/>
+                </or>
+                <or mandatory="true" name="encryption">
+                    <feature name="AES"/>
+                    <feature name="RSA"/>
+                    <feature name="DES"/>
+                </or>
+            </and>
+        </and>
+    </struct>
+    <constraints>
+        <rule>
+            <imp>
+                <var>votingMachine</var>
+                <var>votingKey</var>
+            </imp>
+        </rule>
+        <rule>
+            <imp>
+                <var>mobileDevice</var>
+                <var>AES</var>
+            </imp>
+        </rule>
+        <rule>
+            <imp>
+                <var>desktopComputer</var>
+                <disj>
+                    <var>digitalCertificate</var>
+                    <var>votingKey</var>
+                </disj>
+            </imp>
+        </rule>
+        <rule>
+            <imp>
+                <var>desktopComputer</var>
+                <not>
+                    <var>fingerPrint</var>
+                </not>
+            </imp>
+        </rule>
+    </constraints>
+    <calculations Auto="true" Constraints="true" Features="true" Redundant="true" Tautology="true"/>
+    <comments/>
+    <featureOrder userDefined="true">
+        <feature name="eVoting"/>
+        <feature name="encryption"/>
+        <feature name="RSA"/>
+        <feature name="DES"/>
+        <feature name="AES"/>
+        <feature name="authentication"/>
+        <feature name="votingKey"/>
+        <feature name="digitalCertificate"/>
+        <feature name="fingerPrint"/>
+        <feature name="logging"/>
+        <feature name="desktopComputer"/>
+        <feature name="mobileDevice"/>
+        <feature name="votingMachine"/>
+    </featureOrder>
+</featureModel>
