@@ -1,0 +1,89 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>uma.caosd</groupId>
+  <artifactId>fqas-characterization</artifactId>
+  <version>0.0.1-SNAPSHOT</version>
+  
+  <properties>
+  	<java.version>1.8</java.version>
+  	<slf4j.version>1.7.22</slf4j.version>
+  </properties>
+  
+  <dependencies>
+	<!-- SLF4J -->
+	 
+	<dependency>
+	    <groupId>org.slf4j</groupId>
+	    <artifactId>slf4j-api</artifactId>
+	    <version>${slf4j.version}</version>
+	</dependency>
+	 
+	<!-- Binding for java.util.logging -->
+	  
+	<dependency> 
+	  <groupId>org.slf4j</groupId>
+	  <artifactId>slf4j-jdk14</artifactId>
+	  <version>${slf4j.version}</version>
+	</dependency>
+	 
+	
+	<!-- Binding for logback -->
+	<!-- 
+	<dependency> 
+	  <groupId>ch.qos.logback</groupId>
+	  <artifactId>logback-classic</artifactId>
+	  <version>1.0.13</version>
+	</dependency>
+	 -->
+	 
+	<!-- Binding for Log4J -->
+	 <!-- 
+	<dependency>
+	    <groupId>org.slf4j</groupId>
+	    <artifactId>slf4j-log4j12</artifactId>
+	    <version>${slf4j.version}</version>
+	</dependency>
+	
+	<dependency>
+	    <groupId>log4j</groupId>
+	    <artifactId>log4j</artifactId>
+	    <version>1.2.16</version>
+	</dependency>
+ 	  -->
+ 	  
+	<!-- Binding for simple -->
+	<!-- 
+	<dependency>
+	    <groupId>org.slf4j</groupId>
+	    <artifactId>slf4j-simple</artifactId>
+	    <version>${slf4j.version}</version>
+	</dependency>
+ -->
+	<!-- Encryption: Bouncy Castle -->
+	<dependency>
+	    <groupId>org.bouncycastle</groupId>
+	    <artifactId>bcprov-jdk15on</artifactId>
+	    <version>1.56</version>
+	</dependency>
+
+ 	
+  </dependencies>
+  
+  <build>
+    <pluginManagement>
+      <plugins>
+
+        <plugin>
+          <groupId>org.apache.maven.plugins</groupId>
+          <artifactId>maven-compiler-plugin</artifactId>
+          <version>3.0</version>
+          <configuration>
+            <source>${java.version}</source>
+            <target>${java.version}</target>
+          </configuration>
+	    </plugin>
+
+	  </plugins>
+	</pluginManagement>
+  </build>
+</project>
