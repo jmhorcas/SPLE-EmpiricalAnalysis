@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xmi:XMI xmi:version="2.0" 
+  xmlns:xmi="http://www.omg.org/XMI" 
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+  xmlns:com.prostep.vcontrol.model.common="http://www.prostep.com/vcontrol/model/common.ecore" 
+  xmlns:com.prostep.vcontrol.model.feature="http://www.prostep.com/vcontrol/model/feature.ecore" 
+  xmlns:com.prostep.vcontrol.model.terms="http://www.prostep.com/vcontrol/model/terms.ecore">
+  <com.prostep.vcontrol.model.common:ImpProject id="3c5284a" name="3c5284a">
+    <models xsi:type="com.prostep.vcontrol.model.feature:FeatureModel" id="3c5284a" name="3c5284a">
+      <rootFeature xsi:type="com.prostep.vcontrol.model.feature:FeatureGroup" id="f6671f81" name="f6671f81" optional="false">
+        <children xsi:type="com.prostep.vcontrol.model.feature:Feature" id="c5bf0dc" name="c5bf0dc" optional="true">
+          <children xsi:type="com.prostep.vcontrol.model.feature:FeatureGroup" id="4bf4be37" name="4bf4be37" optional="false" min="1" max="1">
+            <children xsi:type="com.prostep.vcontrol.model.feature:FeatureGroup" id="9a50ee70" name="9a50ee70" optional="true" min="1" max="1"/>
+            <children xsi:type="com.prostep.vcontrol.model.feature:FeatureGroup" id="12e12806" name="12e12806" optional="true" min="1" max="1"/></children>
+          <children xsi:type="com.prostep.vcontrol.model.feature:FeatureGroup" id="ee0e8ba4" name="ee0e8ba4" optional="false" min="1" max="1">
+            <children xsi:type="com.prostep.vcontrol.model.feature:Feature" id="99c3c5cd" name="99c3c5cd" optional="true"/>
+            <children xsi:type="com.prostep.vcontrol.model.feature:Feature" id="1b4f82b1" name="1b4f82b1" optional="true"/></children>
+          <children xsi:type="com.prostep.vcontrol.model.feature:Feature" id="3175bf6" name="3175bf6" optional="true"/>
+          <children xsi:type="com.prostep.vcontrol.model.feature:Feature" id="7d59449f" name="7d59449f" optional="true"/></children>
+        <children xsi:type="com.prostep.vcontrol.model.feature:Feature" id="772b7368" name="772b7368" optional="true">
+          <children xsi:type="com.prostep.vcontrol.model.feature:FeatureGroup" id="2bc8b52e" name="2bc8b52e" optional="false" min="1" max="1">
+            <children xsi:type="com.prostep.vcontrol.model.feature:Feature" id="8b2974f" name="8b2974f" optional="true"/>
+            <children xsi:type="com.prostep.vcontrol.model.feature:Feature" id="1fd0bca5" name="1fd0bca5" optional="true"/></children>
+          <children xsi:type="com.prostep.vcontrol.model.feature:Feature" id="f52feaf9" name="f52feaf9" optional="true"/></children>
+        <children xsi:type="com.prostep.vcontrol.model.feature:Feature" id="326b5372" name="326b5372" optional="true">
+          <children xsi:type="com.prostep.vcontrol.model.feature:FeatureGroup" id="84654a11" name="84654a11" optional="false" min="1" max="1">
+            <children xsi:type="com.prostep.vcontrol.model.feature:Feature" id="38a1df50" name="38a1df50" optional="true"/>
+            <children xsi:type="com.prostep.vcontrol.model.feature:Feature" id="3ee83c7c" name="3ee83c7c" optional="true"/></children>
+          <children xsi:type="com.prostep.vcontrol.model.feature:Feature" id="9f36760a" name="9f36760a" optional="true"/>
+          <children xsi:type="com.prostep.vcontrol.model.feature:FeatureGroup" id="268c3ee3" name="268c3ee3" optional="false" min="1" max="1">
+            <children xsi:type="com.prostep.vcontrol.model.feature:Feature" id="89fbbccd" name="89fbbccd" optional="true"/>
+            <children xsi:type="com.prostep.vcontrol.model.feature:Feature" id="1e2b34ca" name="1e2b34ca" optional="true"/></children>
+          <children xsi:type="com.prostep.vcontrol.model.feature:Feature" id="b6dfb022" name="b6dfb022" optional="true"/></children>
+      </rootFeature>
+      <constraints id="a854d13">
+        <rootTerm xsi:type="com.prostep.vcontrol.model.terms:ImpliesTerm">
+          <leftOperand xsi:type="com.prostep.vcontrol.model.terms:AtomicTerm" element="3175bf6"/>
+          <rightOperand xsi:type="com.prostep.vcontrol.model.terms:AtomicTerm" element="326b5372"/>
+        </rootTerm>
+      </constraints>
+      <constraints id="4449c733">
+        <rootTerm xsi:type="com.prostep.vcontrol.model.terms:ExcludesTerm">
+          <leftOperand xsi:type="com.prostep.vcontrol.model.terms:AtomicTerm" element="9a50ee70"/>
+          <rightOperand xsi:type="com.prostep.vcontrol.model.terms:AtomicTerm" element="99c3c5cd"/>
+        </rootTerm>
+      </constraints>
+      <constraints id="d1015d7a">
+        <rootTerm xsi:type="com.prostep.vcontrol.model.terms:ImpliesTerm">
+          <leftOperand xsi:type="com.prostep.vcontrol.model.terms:AtomicTerm" element="3ee83c7c"/>
+          <rightOperand xsi:type="com.prostep.vcontrol.model.terms:AtomicTerm" element="1e2b34ca"/>
+        </rootTerm>
+      </constraints>
+    </models>
+  </com.prostep.vcontrol.model.common:ImpProject>
+</xmi:XMI>

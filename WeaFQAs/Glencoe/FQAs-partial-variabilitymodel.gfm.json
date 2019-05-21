@@ -1,0 +1,270 @@
+{
+  "id": "b20ed9f3",
+  "name": "b20ed9f3",
+  "timestamp": "2019-05-21T09:50:15.884Z",
+  "features": {
+    "e08e4325": {
+      "name": "e08e4325",
+      "optional": false,
+      "type": "OR"
+    },
+    "ae6850b3": {
+      "name": "ae6850b3",
+      "optional": true,
+      "type": "FEATURE"
+    },
+    "97f95d43": {
+      "name": "97f95d43",
+      "optional": true,
+      "type": "FEATURE"
+    },
+    "155412a8": {
+      "name": "155412a8",
+      "optional": true,
+      "type": "FEATURE"
+    },
+    "8a4369bf": {
+      "name": "8a4369bf",
+      "optional": false,
+      "type": "XOR"
+    },
+    "cb7c0b0f": {
+      "name": "cb7c0b0f",
+      "optional": false,
+      "type": "XOR"
+    },
+    "79cea6f": {
+      "name": "79cea6f",
+      "optional": true,
+      "type": "FEATURE"
+    },
+    "2f54d325": {
+      "name": "2f54d325",
+      "optional": true,
+      "type": "FEATURE"
+    },
+    "5b185acf": {
+      "name": "5b185acf",
+      "optional": false,
+      "type": "XOR"
+    },
+    "1e4ae9b7": {
+      "name": "1e4ae9b7",
+      "optional": true,
+      "type": "FEATURE"
+    },
+    "df0bc66d": {
+      "name": "df0bc66d",
+      "optional": false,
+      "type": "XOR"
+    },
+    "a3d7f47": {
+      "name": "a3d7f47",
+      "optional": true,
+      "type": "FEATURE"
+    },
+    "45795ece": {
+      "name": "45795ece",
+      "optional": false,
+      "type": "XOR"
+    },
+    "4ee74429": {
+      "name": "4ee74429",
+      "optional": true,
+      "type": "FEATURE"
+    },
+    "1b49e2f0": {
+      "name": "1b49e2f0",
+      "optional": true,
+      "type": "XOR"
+    },
+    "4ca8e8a5": {
+      "name": "4ca8e8a5",
+      "optional": true,
+      "type": "XOR"
+    },
+    "5286de63": {
+      "name": "5286de63",
+      "optional": true,
+      "type": "FEATURE"
+    },
+    "4ac23071": {
+      "name": "4ac23071",
+      "optional": true,
+      "type": "FEATURE"
+    },
+    "9261e15": {
+      "name": "9261e15",
+      "optional": true,
+      "type": "FEATURE"
+    },
+    "c74eb7a9": {
+      "name": "c74eb7a9",
+      "optional": true,
+      "type": "FEATURE"
+    },
+    "8b7311ee": {
+      "name": "8b7311ee",
+      "optional": true,
+      "type": "FEATURE"
+    },
+    "bb1f925e": {
+      "name": "bb1f925e",
+      "optional": true,
+      "type": "FEATURE"
+    },
+    "4be275de": {
+      "name": "4be275de",
+      "optional": true,
+      "type": "FEATURE"
+    },
+    "7eb84de9": {
+      "name": "7eb84de9",
+      "optional": true,
+      "type": "FEATURE"
+    }
+  },
+  "tree": {
+    "id": "e08e4325",
+    "children": [
+      {
+        "id": "ae6850b3",
+        "children": [
+          {
+            "id": "8a4369bf",
+            "children": [
+              {
+                "id": "1b49e2f0"
+              },
+              {
+                "id": "4ca8e8a5"
+              }
+            ]
+          },
+          {
+            "id": "cb7c0b0f",
+            "children": [
+              {
+                "id": "5286de63"
+              },
+              {
+                "id": "4ac23071"
+              }
+            ]
+          },
+          {
+            "id": "79cea6f"
+          },
+          {
+            "id": "2f54d325"
+          }
+        ]
+      },
+      {
+        "id": "97f95d43",
+        "children": [
+          {
+            "id": "5b185acf",
+            "children": [
+              {
+                "id": "9261e15"
+              },
+              {
+                "id": "c74eb7a9"
+              }
+            ]
+          },
+          {
+            "id": "1e4ae9b7"
+          }
+        ]
+      },
+      {
+        "id": "155412a8",
+        "children": [
+          {
+            "id": "df0bc66d",
+            "children": [
+              {
+                "id": "8b7311ee"
+              },
+              {
+                "id": "bb1f925e"
+              }
+            ]
+          },
+          {
+            "id": "a3d7f47"
+          },
+          {
+            "id": "45795ece",
+            "children": [
+              {
+                "id": "4be275de"
+              },
+              {
+                "id": "7eb84de9"
+              }
+            ]
+          },
+          {
+            "id": "4ee74429"
+          }
+        ]
+      }
+    ]
+  },
+  "constraints": {
+    "7c8c1c08": {
+      "type": "ImpliesTerm",
+      "operands": [
+        {
+          "type": "FeatureTerm",
+          "operands": [
+            "79cea6f"
+          ]
+        },
+        {
+          "type": "FeatureTerm",
+          "operands": [
+            "155412a8"
+          ]
+        }
+      ]
+    },
+    "2c70ec9d": {
+      "type": "ExcludesTerm",
+      "operands": [
+        {
+          "type": "FeatureTerm",
+          "operands": [
+            "1b49e2f0"
+          ]
+        },
+        {
+          "type": "FeatureTerm",
+          "operands": [
+            "5286de63"
+          ]
+        }
+      ]
+    },
+    "89c55300": {
+      "type": "ImpliesTerm",
+      "operands": [
+        {
+          "type": "FeatureTerm",
+          "operands": [
+            "bb1f925e"
+          ]
+        },
+        {
+          "type": "FeatureTerm",
+          "operands": [
+            "7eb84de9"
+          ]
+        }
+      ]
+    }
+  }
+}
