@@ -1,4 +1,4 @@
-# Tool Support
+# WeaFQAs' Tool Support
 This project answers the following research question:
 > How the tools behave when they are used in complex SPLs?
 
@@ -12,6 +12,9 @@ Variability model of the [Functional Quality Attributes (FQAs)](https://doi.org/
 * The FQAs variability model in different formats.
 * The FQAs software architecture implemented with different variability approaches.
 * The FQAs software architecture in UML.
+* Other artifacts like model to model transformations that implement specific variation points (e.g., *ObjectExistence* in CVL).
+
+**Note:** Further information about the artifacts as well as other specific artifacts of each tool can be consulted in each project below:
 
 ## Procedure
 For each tool, visit its corresponding project that contains specific artifacts and instructions:
