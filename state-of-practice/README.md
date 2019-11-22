@@ -2,7 +2,7 @@
 The State of Practice answers the following research question:
 > What are the tools that provide some kind of support for SPLs? Are they available, usable, and keep up to date?
 
-Timeline with all SPL tools published until February 2019:
+Timeline with all SPL tools published until December 2019:
 ![Timeline](timeline.png)
 
 The state of practice gives a wide vision of the current state of art of the SPL tools and helps practitioners to select appropriate toolsroadmaps helps to integrate independent tools.
@@ -10,7 +10,7 @@ This project contains the artifacts and instructions to replicate and/or improve
 
 ## Artifacts
 * Data extraction form [(Google Form)](https://docs.google.com/forms/d/e/1FAIpQLSczgT5cgYXQuh7d2bp6ZtF-1wNfzXXNT5WZM-vCOZ0Oi9lbCw/viewform?usp=sf_link)
-* [Timeline](timeline.png) with all SPL tools published until February 2019.
+* [Timeline](timeline.png) with all SPL tools published until December 2019.
 * Responses of the data extraction form ([.csv file](SPL Tools - Data Extraction Form.csv)).
 * Responses of the data extraction form ([.xlsx file](SPL Tools - Data Extraction Form.xlsx)) modified for extracting statistics with R.
 * [R script](statistics-script.R) to get stastitics summary.
