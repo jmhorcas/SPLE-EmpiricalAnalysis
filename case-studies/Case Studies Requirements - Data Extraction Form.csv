@@ -1,0 +1,108 @@
+Marca temporal,Referencia (URL),Name of the case study,Domain,Year,Type,Brief description (optional),Variability and SPL Requirements
+2019-10-22,https://dl.acm.org/doi/10.1145/2491627.2491655,Parking brake system,automotive,2013,Industrial case study,"An Electric Parking Brake (EPB) system commonly used by automotive companies e.g., Renault) to replace or improve the functionality of conventional parking brake systems.","- Documentary language to represent and describe vehicle features for each vehicle family.
+- Different viewpoints and constraints between them to cover the scope of the system architecture (e.g., electronic, mechanical and software components).
+- A modeling language to provide representations for each of the viewpoints (e.g., SysML/UML with custom profiles).
+- MultiPLs to distinguish two types of products, which are different in terms of novelty, purpose, and the amount of reused assets: prototypes and commercial vehicles.
+- Updating domain models to reflect changes (i.e., support for evolution).
+- Staged configuration process that follows the different viewpoints.
+- Ensuring traceability of the variability source in respect to where it appeared in the system."
+2019-10-22,https://dl.acm.org/doi/10.1145/3302333.3302345,Abstract fuel control system,automotive,2019,Industrial case study,"Model that takes as input signals the pedal angle and engine speed, and outputs the signal air-fuel ratio (AF), which influences fuel effciency and car performance.","- MultiPLs to model cars, families of cars, and even families of families of cars, which share common features, hazards, environmental conditions, and driving conditions.
+- Multiple viewpoints with relationships among them such as hazards, cars features, system
+control, and context (e.g., environment).
+- Numerical features such as the pedal angle, engine speed, sensors' tolerance, or atmospheric pressure with different range in intervals (e.g., [0; 61:2) for the pedal angle) and precision.
+- Constraints among parameters (e.g., the better sensors with high precision are only available on sport cars).
+- Non-functional properties such as fuel effciency and car performance.
+- Structural links from the feature models to the underlying Simulink models.
+- Data variability represented as parameters in the models, and composite variability as model variant blocks or variant sub-systems.
+- Devising and reasoning about different testing/simulation conditions."
+2019-10-23,https://doi.org/10.1002/smr.1926,Autonomous vehicles,automotive,2018,Academic case study,"A reconfigurable vehicle controller agent for autonomous vehicles that adapts the parameters of a car-following model at runtime, in order to maintain a high degree of traffic quality (efficiency and safety) under different weather conditions.","- Several numerical features (with decimal point) such as speed, acceleration, jam distance, maximum safe deceleration, and time headway.
+- Viewpoints and constraints between them involving the environmental context (e.g., type of road, weather conditions, traffic density), the autonomous vehicle (e.g., behavioral parameters and car-following models), and the traffic quality attributes (e.g., efficiency and security).
+- Non-functional properties such as efficiency (e.g., travel time, group disagreement) and safety
+(e.g., time to collision, lane change rate).
+- Structural links from the feature models to the underlying software architecture."
+2019-10-23,https://link.springer.com/article/10.1007%2Fs11219-017-9400-8,Video generator,Computer vision,2019,Industrial case study,Generation of variants of synthetic videos used to benchmark video processing algorithms.,"- Numeric features such as the number of vehicles that appear in a video.
+- Attributes with default values, deltas to discretize continuous domain values, and multi-ranges.
+- Multi-features or cardinality-based features to configure, for instance, different vehicles in different ways for the same video.
+- Complex constraints (e.g., a countryside scene implies to include less than 10 vehicles).
+- Meta-information
+- Differentiating between static and dynamic variability.
+- Sample and filter relevant configurations to control the automated reasoning about them.
+- Generation of optimal configurations regarding different criteria and using different optimization techniques."
+2019-10-23,https://dl.acm.org/doi/10.1145/3336294.3336309,Quality-based video generator,Computer vision,2017,Industrial case study,Generation of synthetic videos used to benchmark computer vision systems.,"- Numeric features, ranges for attribute domains and complex constraints.
+- Reduce the configuration space to avoid the generation of non-acceptable videos (e.g., too noisy or too dark).
+- Sampling of configurations and machine learning are needed to create predictive models or classifiers to infer the properties of still non-generated configurations.
+- Variability of different dimensions and the constraints among them to generate context-aware configurations."
+2019-10-23,https://www.sciencedirect.com/science/article/pii/S0167642312002158,Medical imaging workflow,Computer vision,2013,Academic case study,Definition of a domain-specific language.,"- Coping with large-scale feature models.
+- Multi-dimensional or multi-perspective approach (e.g., hardware, software).
+- Various levels of abstraction.
+- Composition and management support for a set of inter-related models.
+- Multi-step configuration support."
+2019-10-24,https://ieeexplore.ieee.org/document/5773382,Video surveillance system,Computer vision,2011,Academic case study,Use of the domain-specific language defined in (Acher et al. 2013).,"- Coping with large feature models.
+- Multi-perspective approach.
+- Variability at design and at runtime."
+2019-10-24,https://dl.acm.org/doi/10.1145/2814228.2814229,OpenCCE SPL,Cryptography,2015,Real world case study,Variability of the Java Cryptography Architecture (JCA) and development of the OpenCCE SPL to manage cryptography components.,"- Hierarchical structure to differentiate symmetric and asymmetric ciphers and algorithm classes
+(e.g., encryption ciphers vs. hashing digests).
+- Non-Boolean values to specify attributes such as key size or memory consumption levels.
+- Reuse through some form of referencing to avoid redefining the same attributes for each cipher.
+- Automated reasoning to find instances and optimize multiple objectives.
+- Guide developers through selecting the relevant cryptography components to use.
+- Automatically generates the required code with the correct API calls for them.
+- Analyzes the final program to ensure that no threats have been introduced, neither during initial development, nor during program evolution."
+2019-10-24,https://dl.acm.org/doi/10.1145/2866614.2866629,Cryptography API,Cryptography,2016,Academic case study,Extend the work in (Arzt et al. 2015) to model generic cryptography components.,"- Multiple product types such as encryption tasks and encryption algorithms that need to be modeled separately but with constraints between the products (e.g., algorithms of a task).
+- Numerical variables such as the size of the produced hash or the encryption key size in bits.
+- Limits (e.g., the output size), allowed ranges (e.g., key sizes values between 512 and 65,536 for RSA), and default values (e.g., to provide the user with average secure defaults).
+- Ordinal attributes such as security or performance levels of an algorithm defined as enumeration types (e.g., ""Slow"", ""Strong"", etc.) instead of integers encoding discrete values (e.g., 1 to 4).
+- Partial configurations to specify certain properties and leave the instance generator to decide based on a set of constraints.
+- Optimizing numerical features for properties such as key size or iterations of the cipher.
+- Ignore irrelevant parts of the model based on the kind of task that is being configured."
+2019-10-25,https://link.springer.com/chapter/10.1007%2F978-3-319-44341-6_2,E-payment application SPL,Cryptography,2016,Academic case study,Customization of encryption components to the application requirements and weaving with the software architecture of the application.,"- Customization of encryption components to the application's requirements (e.g., use of the RSA algorithm with keys of 2048 bits).
+- Injection or weaving of the encryption components in the application software architecture in a non-intrusive way (e.g., using aspect-orientation)."
+2019-10-28,https://dl.acm.org/doi/10.1145/3106195.3106217,Development approach for CPSs,Cyber-physical systems,2017,Academic case study,A vision on a development approach for variable cyber-physical systems.,"- Multiple viewpoints for different variability aspects: components (hardware, behavior), context
+(environment, use case), hierarchy (intramodel, intermodel), quality (performance, safety), and
+time (design, runtime).
+- Complex constraints to model interactions between the viewpoints.
+- Heterogeneity to the variability modeling: source-code fragments, hardware components, or
+documentation.
+- Dynamic SPLs for self-adapting and reconfiguration of components due to changes in their
+environment.
+- Optimization of configurations to find the most suitable configuration in particular use cases
+and environments.
+- Non-functional properties to achieved defined goals based on qualitative properties."
+2019-10-28,https://www.researchgate.net/publication/282973107_Cyber-Physical_Systems_Product_Lines_Variability_Analysis_and_Challenges,Tank and quad-copter PLs,Cyber-physical systems,2015,Industrial case study,"An SPL to control the liquid level (water or chemical products) of a configurable tank system, and an SPL of Unmanned Aerial Vehicles (UAVs) to configure a quad-copter.","- Multiple viewpoints and hierarchical levels to represent different variability taxonomies: interaction (sensors and actuators), mechanical elements, hardware, and software.
+- Complex constraints between the variation points of the different viewpoints (e.g., a mandatory sensor to measure the acidity if the tank's liquid is chemical).
+- Non-functional properties to model the quality of the sensors and actuators (sensitivity, ranges, response time), and the performance and energy consumption of the global system.
+- Numerical features to model parametric values of sensors that are manually set up by the users.
+- Cardinality-based features to instantiate the same piece of software once or more as for example to control several physical processes or to obtain data from different sensors.
+- Work at the architectural level considering resource constraints when implementing variability in the software architecture.
+- Sampling of configurations to verify and validate sample configuration systems, involving techniques to choose configurations where different features interact among them at least once (e.g., t-way testing)."
+2019-10-29,https://dl.acm.org/doi/10.1145/3233027.3233046,Train control system,Cyber-physical systems,2018,Industrial case study,"The European Railway Traffic Management System (ERTMS) is an international standard to improve the interoperability, performance, reliability, and safety of modern railways. ERTMS relies on the European Train Control System (ETCS) that is an Automatic Train Protection
+(ATP) system which continuously supervises the train, ensuring that the safety speed and distance are not exceeded.","- Hierarchical levels to model the variability of the different levels of operation.
+- Numerical features with accuracy and constraints between them and normal features. For example to specify the maximum distance that a train is allowed to travel, the maximum allowed speed depending on the track morphology.
+- Other complex constraints related with dynamic variability such as temporal constraints (e.g., temporary speed restrictions and conditional or unconditional emergency stops)."
+2019-10-30,https://ieeexplore.ieee.org/document/6572787,Kconfig and eCos systems,Operating Systems,2013,Real world case study,"Study of variability modeling languages used in real-world open-source operating systems. Concretely, Kconfig systems such as the Linux kernel, and the Component Definition Language (CDL) used in the eCos system.","- Domain-specific vocabulary (e.g., tristate features in Kconfig systems).
+- Scaling variability modeling, since the models are significantly larger (e.g., 1,708 features on average), and have a very different shape.
+- Data features, including integers,  oats, and strings (e.g., strings are used for file names).
+- Constraints, including arithmetic and string operators.
+- Derived (computed) features to simplify constraints and to perform calculations that otherwise would be hidden in the build system.
+- Group constraints, being mostly xor (1..1) and few mutex (0..1).
+- Three-valued logic binding modes to specify whether a feature implementation is linked statically, built for dynamic linking, or absent.
+- Default values, either represented as literals or expressions for saving the user unnecessary configuration work.
+- Visibility conditions to hide whole branches of the configurator hierarchy."
+2019-11-05,https://www.sciencedirect.com/science/article/pii/S0950584914001220?via%3Dihub,Android and Debian,Operating Systems,2014,Real world case study,"Extension of work in (Berger et al. 2013b) to include Android, Debian and Eclipse.","- Static variability mechanisms such as code generators and conditional compilation to selectively compiles sources files.
+- Dynamic variability mechanisms such as configuration parameters and component-oriented architectures to load components according to a specific configuration.
+- Binding modes and in particular binding times to allow basic units or composite units to be installed and removed at run-time.
+- Modularization mechanisms to deal with larger models and high number of dependencies."
+2019-11-11,https://dl.acm.org/doi/10.1145/3302333.3302350,Service robots,robotics,2019,Academic and Industrial case study,Variability engineering in various academic and industrial service robots.,"-  Multitude of variability dimensions, such as the robot mechanical structure, the tasks to be performed, and the environmental conditions (context).
+- Dependencies between the dimensions (e.g., different navigation algorithms are used based on the kinematics of the robot).
+- Different variants of the same robot model to deploy different software based on the customization that is required by a specific customer.
+- Multi SPLs to design each functional sub-system of an autonomous robot as an SPL.
+- Modeling, composing, and deriving the software architecture of each sub-systems in terms of Model-Driven Development.
+- A substantial degree of variability can only be resolved at runtime (e.g., obstacles of various kinds may require some flexibility in the behavior of the robot).
+- Different operation modes (e.g., a sharing mode attribute to allow the end user to decide how the functionalities of the robot should be shared)."
+2019-11-11,https://www.researchgate.net/publication/224829569_An_Approach_for_Representing_Domain_Requirements_and_Domain_Architecture_in_Software_Product_Line,Autonomous mobile robots,robotics,2012,Industrial case study,Variability of autonomous mobile robots at the architecture level using domains pecific languages and focusing on non-functional properties.,"- domain-specific languages (e.g., SysML and xADL) to represent core assets at the architectural level.
+- Non-functional properties represented as attributes in the architecture: stimulus, source of stimulus, environment, artifact, response, response measure, and expected response."
+2019-11-12,https://www.igi-global.com/gateway/article/119076,Service robots,robotics,2014,Real world examples,Variability modeling of non-functional properties for service robots.,"- Modeling the variability of non-functional properties.
+- Separating the variability modeling of the non-functional properties from the functionality of the service robots."
+2019-11-12,https://ieeexplore.ieee.org/document/6973810?arnumber=6973810&tag=1,Cloud robotics SPL,robotics,2014,Industrial case study,Definition of a cloud robotics SPL.,- Multiple viewpoints are required to model different dimensions of the robot.
+2019-11-18,https://hal.sorbonne-universite.fr/hal-01353929,Landmark search robot,robotics,2016,Industrial case study,Definition of landmark search robots with variability.,- Variability is managed at the architectural level.
+2019-11-18,https://link.springer.com/chapter/10.1007/11554844_6,Home service robots,robotics,2005,Legacy system,Definition of home service robots with variability.,- Refined feature models to add features extracted from legacy home service robots by applying a reverse engineering process.
