@@ -1,11 +1,11 @@
-# State of Practice
-The State of Practice answers the following research question:
-> What are the tools that provide some kind of support for SPLs? Are they available, usable, and keep up to date?
+# State of the art
+The state of the art answers the following research question:
+> What tools exist that provide support for SPLs?
 
 Timeline with all SPL tools published until December 2019:
 ![Timeline](timeline.png)
 
-The state of practice gives a wide vision of the current state of art of the SPL tools and helps practitioners to select appropriate toolsroadmaps helps to integrate independent tools.
+The state of the art gives a wide vision of the current state of art of the SPL tools and helps practitioners to select appropriate toolsroadmaps helps to integrate independent tools.
 This project contains the artifacts and instructions to replicate and/or improve the state of practice.
 
 ## Artifacts

@@ -1,8 +1,8 @@
 # Tooling Roadmaps
 The tooling roadmaps answers the following research question:
-> Is it possible to carry out a complete SPL process with the existing tool support?
+> Is it possible to carry out an SPL process with the existing tool support and for the SPL activities and characteristics identified in RQ1?
 
-Practical roadmaps to carry out an SPL process with the existing tool support:
+Roadmaps to carry out an SPL process with the existing tool support:
 ![Roadmap](roadmaps.png)
 
 The tooling roadmaps helps to integrate independent tools. This project contains the instructions to connect the different tools following the roadmaps. It also contains the implemented scripts and algorithms to fill some of the possible connection between the roadmaps.

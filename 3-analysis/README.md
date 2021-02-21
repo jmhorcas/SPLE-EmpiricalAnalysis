@@ -1,8 +1,9 @@
 # Analysis of the Tool Support
 This project answers the following research question:
-> How the tools behave when they are used in complex SPLs?
+> How existing tools support the SPL activities and variability modeling characteristics required by the case studies identified in RQ1?
 
-The objective is to empirically analyzing the most usable SPL tools. We use a running case study based on an SPL process for Functional Quality Attributes ([WeaFQAs](https://hdl.handle.net/10630/17231)) with demanding characteristics such as clonable features, variable features, attributes, huge feature models, and so on.
+The objective is to empirically analyzing the most usable SPL tools. 
+We use a running case study based on an SPL process for Functional Quality Attributes ([WeaFQAs](https://hdl.handle.net/10630/17231)) with demanding characteristics such as clonable features, variable features, attributes, huge feature models, and so on.
 This project contains the artifacts developed in different SPL tools to carry out the [WeaFQAs](https://hdl.handle.net/10630/17231) SPL process.
 
 Variability model of the [Functional Quality Attributes (FQAs)](https://doi.org/10.1016/j.infsof.2017.10.018):
